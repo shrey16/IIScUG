@@ -1,0 +1,23 @@
+/* CSS Document */
+#LeftArrow {
+	position:absolute;
+	top:40%;
+	height:10%;
+	width:3%;
+	background-color:#DBDBDB;
+	padding:10px;
+}
+
+#LeftArrow:hover, #RightArrow:hover {
+	background-color:#A3A3A3;
+}
+
+#RightArrow {
+	position:absolute;
+	top:40%;
+	right:0;
+	height:10%;
+	width:3%;
+	background-color:#DBDBDB;
+	padding:10px;
+}
