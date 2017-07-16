@@ -1,0 +1,47 @@
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.background {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	display: none;
+}
+
+#layer1 {
+	background-image: url("../images/home/Main Building 4.png");
+	z-index: -4;
+}
+
+#layer2 {
+	background-image: url("../images/home/Main Building 3.png");
+	z-index: -3;
+}
+
+#layer3 {
+	background-image: url("../images/home/Main Building 2.png");
+	z-index: -1;
+}
+
+#layer4 {
+	background-image: url("../images/home/Main Building 1.png");
+	z-index: -2;
+}
+
+#banner {
+	font: normal normal 600 60px Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: white;
+	width: 100%;
+	padding: 50px;
+	text-align: center;
+	top: 30%;
+	position: fixed;
+}
