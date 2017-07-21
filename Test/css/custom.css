@@ -1,3 +1,7 @@
+/*Imports*/
+
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
 /* CSS Document */
 
 body {
@@ -9,7 +13,7 @@ body {
 	line-height: 1.55;
 	text-align: justify;
 	background-image: url(../images/background.jpg);
-	background-attachment: fixed;
+/*	background-attachment: fixed;*/
 	background-color: #F2F2F2;
 	padding-top:70px;
 }
@@ -374,20 +378,21 @@ body {
 
 
 /*CONTENT CSS BEGINS*/
-.content-card {
-	background-color: #FFFFFF;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
-	margin:0 10px 20px;
-	padding: 0 0 30px;
-	overflow: hidden;
-}
-
 #container-main {
 	position: relative;
 	margin: 0 auto 20px;
-	width: 75%;
-	left:auto;
+	width: calc(100%-20px);
 	display: block;
+}
+
+.content-card {
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
+	padding: 0 0 30px;
+	overflow: hidden;
+	width: 90%;
+	margin: 0 auto;
+	max-width: 960px;
 }
 
 #article-header-main{
@@ -406,14 +411,17 @@ body {
 #article-header-heading{
 	position: relative;
 	text-align: center;
-	font-size: 56px;
+	font-size: 64px;
 	padding: 30px 50px 0;
+	font-family: 'Bree Serif', serif;
 }
+
 #article-header-byline{
 	position: relative;
 	padding:0 30px 5px;
 	text-align: center;
 }
+
 #article-content {
 	margin: 0;
 	font-size: 1.3em;
@@ -425,19 +433,28 @@ body {
 	padding: 0 80px;
 }
 
+@media only screen and (max-width: 767px) {
+	#article-content {
+		padding: 0 20px;
+	}
+}
+
 #article-content p {
-	margin: 20px 20px;
+	margin: 20px 0px;
 }
 
 #article-content h1 {
-	margin: 30px 0 10px;
-	font-size: 42px;
+/*	margin: 30px 0 10px;*/
+	font-size: 28px;
 	text-align: left;
+	font-family: 'Bree Serif', serif;
 }
 
 #article-content h2 {
-	margin: 0px 10px 0;
-	font-size: 36px;
+	margin: 0px;
+	font-size: 24px;
 	text-align: left;
+	font-family: 'Bree Serif', serif;
 }
+
 /*CONTENT CSS ENDS*/
